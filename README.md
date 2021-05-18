@@ -40,8 +40,6 @@ python -m demo.process_pngs -p data -ie gw -tm Flash
 
 To see other arguments of the script call `python -m demo.process_pngs -h` from the root directory.
 
-Also the visualizations of different stages of implemented demo raw image processing pipeline can be found in the `demo/process_img.ipynb` file.
-
 Also you can use more reproducible way via Docker:
 
 ```bash
@@ -49,3 +47,5 @@ sudo docker build -t nightimaging .
 sudo docker run --rm -u $(id -u):$(id -g) -v $(pwd)/data:/images nightimaging python -m demo.process_pngs -p /images -ie gw -tm Flash
 
 ```
+
+Also the visualizations of different stages of implemented demo raw image processing pipeline can be found in the `demo/process_img.ipynb` file, which one can [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/createcolor/nightimaging/blob/main/demo/process_img.ipynb).
